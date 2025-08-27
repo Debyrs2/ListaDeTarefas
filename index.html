@@ -1,0 +1,39 @@
+<!Doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+        <div class="lista">
+            <ol id="task-list" onclick="underlineTask(event)">
+                <li><input type="checkbox"> Tarefa 1</li>
+                <li><input type="checkbox"> Tarefa 2</li>
+                <li><input type="checkbox"> Tarefa 3</li>
+                <li><input type="checkbox"> Tarefa 4</li>
+                <li><input type="checkbox"> Tarefa 5</li>
+            </ol>
+        </div>
+        <div class="input-group">
+            <input type="text" id="new-task" placeholder="Nova Tarefa">
+            <button id="add-task">Adicionar Tarefa</button>
+        </div>
+        <div class="input-group">
+            <input type="number" id="remove-task-input" placeholder="Número da tarefa (1, 2, 3...)" min="1">
+            <button id="remove-task">Remover Tarefa</button>
+        </div>
+        <div class="input-group">
+            <input type="number" id="edit-task-input" placeholder="Número da tarefa (1, 2, 3...)" min="1">
+            <button id="edit-task">Editar Tarefa</button>
+        </div>
+    </header>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+body {
+    align-items: center;
+    background-color: #4173ad;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    background: rgb(0, 0, 94);
+    font-family: Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.911);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.lista {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: rgba(18, 2, 78, 0.911);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.li {
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
