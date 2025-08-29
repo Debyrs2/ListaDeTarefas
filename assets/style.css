@@ -1,35 +1,112 @@
 body {
     align-items: center;
-    background-color: #4173ad;
+    background: linear-gradient(to right, #000000, #434343);
     margin: 0;
     padding: 20px;
 }
 
 h1 {
     text-align: center;
-    background: rgb(0, 0, 94);
+    background: linear-gradient(to right, #024642, #059784);
     font-family: Arial, sans-serif;
     color: rgba(255, 255, 255, 0.911);
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 5px rgba(90, 89, 89, 0.1);
 }
 
 .lista {
     text-align: center;
     font-family: Arial, sans-serif;
     color: rgba(18, 2, 78, 0.911);
-    background: rgba(255, 255, 255, 0.8);
-    padding: 10px;
+    background: rgb(250, 250, 250);
+    padding: 15px;
+    width: 10px 30px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 5px rgba(90, 89, 89, 0.1);
+    margin-bottom: 20px;
+    justify-self: center;
+
 }
 
-.li {
-    padding: 0;
+#new-task,
+#add-task {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#add-task {
+    background: linear-gradient(to right, #024642, #059784);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-color: rgb(0, 61, 71);
+    box-shadow: 0 5px 5px rgba(7, 0, 0, 0.692);
+}
+
+#remove-task-input,
+#remove-task {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#remove-task {
+    background: linear-gradient(to right, #024642, #059784);
+    color: white;
+    cursor: pointer;
+    border-color: rgb(0, 61, 71);
+    box-shadow: 0 5px 5px rgba(7, 0, 0, 0.692);
+}
+
+#edit-task-input,
+#edit-task,
+#edit-task-new-input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#edit-task {
+    background: linear-gradient(to right, #024642, #059784);
+    color: white;
+    cursor: pointer;
+    border-color: rgb(0, 61, 71);
+    box-shadow: 0 5px 5px rgba(7, 0, 0, 0.692);
+}
+
+.input-group {
     text-align: center;
-    margin: 0;
+    margin-bottom: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+@media screen and (max-width: 900px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .lista {
+        font-size: 0.9em;
+    }
+
+    #new-task,
+    #add-task,
+    #remove-task-input,
+    #remove-task,
+    #edit-task-input,
+    #edit-task,
+    #edit-task-new-input {
+        font-size: 0.9em;
+    }
 }

@@ -72,3 +72,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+underlineTask === 'true';
+if (underlineTask === 'true') {
+    alert("Parabéns por completar a tarefa!");
+}
