@@ -21,71 +21,104 @@ h1 {
     color: rgba(18, 2, 78, 0.911);
     background: rgb(250, 250, 250);
     padding: 15px;
-    width: 10px 30px;
     border-radius: 5px;
-    box-shadow: 2px 5px rgba(90, 89, 89, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    width: 100%;
+}
+
+.lista ul {
+    margin: 0;
+    padding: 0;
+}
+
+.lista li {
+    font-family: Arial, sans-serif;
+    color:rgb(0, 61, 71);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     justify-self: center;
-
 }
 
-#new-task,
-#add-task {
-    padding: 10px;
-    margin: 5px;
-    border: 1px solid #ccc;
+.controls-card {
+    background: rgb(250, 250, 250);
+    padding: 15px;
     border-radius: 5px;
-}
-
-#add-task {
-    background: linear-gradient(to right, #024642, #059784);
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    border-color: rgb(0, 61, 71);
-    box-shadow: 0 5px 5px rgba(7, 0, 0, 0.692);
-}
-
-#remove-task-input,
-#remove-task {
-    padding: 10px;
-    margin: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#remove-task {
-    background: linear-gradient(to right, #024642, #059784);
-    color: white;
-    cursor: pointer;
-    border-color: rgb(0, 61, 71);
-    box-shadow: 0 5px 5px rgba(7, 0, 0, 0.692);
-}
-
-#edit-task-input,
-#edit-task,
-#edit-task-new-input {
-    padding: 10px;
-    margin: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#edit-task {
-    background: linear-gradient(to right, #024642, #059784);
-    color: white;
-    cursor: pointer;
-    border-color: rgb(0, 61, 71);
-    box-shadow: 0 5px 5px rgba(7, 0, 0, 0.692);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 .input-group {
-    text-align: center;
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
+.input-group input {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px 0 0 5px !important;
+}
+
+.input-group .btn {
+    background: linear-gradient(to right, #024642, #059784);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 0 5px 5px 0 !important;
+    box-shadow: 0 2px 5px rgba(7, 0, 0, 0.3);
+}
+
+.input-group .btn:hover {
+    background: linear-gradient(to right, #013633, #048574);
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #024642, #059784);
+    border-color: rgb(0, 61, 71);
+    border-radius: 5px;
+    color: white;
+    gap: 5px;
+    text-align: center;
+    justify-self: center;
+    padding: 10px;
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 45px);
+    justify-self: center;
+    padding: 10px;
+
+}
+
+.calculadora button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: linear-gradient(to right, #024642, #059784);
+    color: white;
+    cursor: pointer;
+    border-color: rgb(0, 61, 71);
+    box-shadow: 0 5px 5px rgba(7, 0, 0, 0.692);
+}
+
+.calculadora-container {
+    background: #002722;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    height: fit-content;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
 
 @media screen and (max-width: 900px) {
     body {

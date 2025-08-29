@@ -5,35 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Lista de Tarefas</h1>
-        <div class="lista">
-            <ol id="task-list" onclick="underlineTask(event)" onclick="parabens(event)">
-                <li><input type="checkbox"> Tarefa 1</li>
-                <li><input type="checkbox"> Tarefa 2</li>
-                <li><input type="checkbox"> Tarefa 3</li>
-                <li><input type="checkbox"> Tarefa 4</li>
-                <li><input type="checkbox"> Tarefa 5</li>
-            </ol>
+    <div class="container">
+        <h1 class="mt-4 mb-4">Lista de Compras</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="lista">
+                    <ul id="task-list" class="list-unstyled" onclick="underlineTask(event)">
+                        <li><input type="checkbox"><strong>Ítem 1 </strong> <input type="text"
+                                placeholder="Observações"></li>
+                        <li><input type="checkbox"><strong>Ítem 2 </strong> <input type="text"
+                                placeholder="Observações"></li>
+                        <li><input type="checkbox"><strong>Ítem 3 </strong> <input type="text"
+                                placeholder="Observações"></li>
+                        <li><input type="checkbox"><strong>Ítem 4 </strong> <input type="text"
+                                placeholder="Observações"></li>
+                        <li><input type="checkbox"><strong>Ítem 5 </strong> <input type="text"
+                                placeholder="Observações"></li>
+                    </ul>
+                    <div class="controls-card">
+                        <div class="input-group mb-3">
+                            <input type="text" id="new-task" class="form-control" placeholder="Novo Ítem">
+                            <button id="add-task" class="btn">Adicionar ítem</button>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="number" id="remove-task-input" class="form-control"
+                                placeholder="Número do ítem (1, 2, 3...)" min="1">
+                            <button id="remove-task" class="btn">Remover ítem</button>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="number" id="edit-task-input" class="form-control"
+                                placeholder="Número do ítem (1, 2, 3...)" min="1">
+                            <button id="edit-task" class="btn">Editar ítem</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="calculadora-container">
+                    <h2>Calculadora</h2>
+                    <div id="resultado">
+                        <input type="text" id="resultado-input" class="form-control" placeholder="Resultado" readonly>
+                    </div>
+                    <div class="calculadora">
+                        <button>1</button> <button>2</button> <button>3</button> <button>+</button>
+                        <button>4</button> <button>5</button> <button>6</button> <button>-</button>
+                        <button>7</button> <button>8</button> <button>9</button> <button>*</button>
+                        <button>C</button> <button>0</button> <button>=</button> <button>/</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="input-group">
-            <input type="text" id="new-task" placeholder="Nova Tarefa">
-            <button id="add-task">Adicionar Tarefa</button>
-        </div>
-        <div class="input-group">
-            <input type="number" id="remove-task-input" placeholder="Número da tarefa (1, 2, 3...)" min="1">
-            <button id="remove-task">Remover Tarefa</button>
-        </div>
-        <div class="input-group">
-            <input type="number" id="edit-task-input" placeholder="Número da tarefa (1, 2, 3...)" min="1">
-            <button id="edit-task">Editar Tarefa</button>
-        </div>
-    </header>
-    <script src="assets/script.js"></script>
+
+        <script src="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/script.js"></script>
 </body>
 
 </html>

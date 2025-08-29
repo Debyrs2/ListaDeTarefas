@@ -9,7 +9,7 @@ function addTask() {
         taskList.appendChild(newTask);
         taskInput.value = "";
     } else {
-        alert("Por favor, insira uma tarefa.");
+        alert("Por favor, insira um ítem.");
     }
 }
 
@@ -33,7 +33,7 @@ function editTask() {
     const tasks = document.querySelectorAll("#task-list li");
 
     if (taskIndex >= 0 && taskIndex < tasks.length) {
-        const newText = prompt("Digite o novo texto para a tarefa:");
+        const newText = prompt("Digite o novo texto para o ítem:");
         if (newText && newText.trim() !== "") {
             const checkbox = tasks[taskIndex].querySelector('input[type="checkbox"]');
             const isChecked = checkbox.checked;
@@ -72,8 +72,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-
-underlineTask === 'true';
-if (underlineTask === 'true') {
-    alert("Parabéns por completar a tarefa!");
-}
